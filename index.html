@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme-Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="color-options">
+        <input type="color" id="color">
+        <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+        <div class="color-option" style="background-color: #ff3f34;" data-color="#ff3f34"></div>
+        <div class="color-option" style="background-color: #ffa801;" data-color="#ffa801"></div>
+        <div class="color-option" style="background-color: #ffd32a;" data-color="#ffd32a"></div>
+        <div class="color-option" style="background-color: #05c46b;" data-color="#05c46b"></div>
+        <div class="color-option" style="background-color: #2967db;" data-color="#2967db"></div>
+        <div class="color-option" style="background-color: #0fbcf9;" data-color="#0fbcf9"></div>
+        <div class="color-option" style="background-color: #ff49ad;" data-color="#ff49ad"></div>
+    </div>
+    <canvas></canvas>
+    <div class="btns">
+        <input id="line-width" type="range" min="1" max="10" value="5" step="0.5">
+        <button type="button" id="mode-btn">Fill</button>
+        <button type="button" id="destroy-btn">Destroy</button>
+        <button type="button" id="eraser-btn">Eraser</button>
+        <input type="file" accept="image/*" id="file" />
+        <button type="button" id="save">Save Image</button>
+        <input type="text" placeholder="Write and then double click" id="text">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
